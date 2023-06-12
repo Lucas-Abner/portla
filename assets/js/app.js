@@ -70,4 +70,22 @@ function checkProject(boxActive) {
     let dragItem = document.querySelector(".box.active");
     e.currentTarget.appendChild(dragItem);
   }
-  
+
+
+  // Validação do form
+
+  const nameInput = document.querySelector(".input-name");
+  const passwordInput = document.querySelector(".input-password");
+  const emailInput = document.querySelector(".input-email");
+
+  document.querySelector(".btn-form").addEventListener("click", checkInputs);
+
+  function checkInputs(e){
+    e.preventDefault();
+
+    if(nameInput.value == "" || passwordInput.value == "" || emailInput.value == ""){
+      nameInput.style.borderBottom = "2px solid red";
+      passwordInput.style.borderBottom = "2px solid red";
+      emailInput.style.borderBottom = "2px solid red";
+    }
+  }
