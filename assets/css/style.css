@@ -184,6 +184,14 @@ header nav ul,li a:hover{
     transition: all 0.2s ease-in;
 }
 
+.box.active{
+    border: 2px solid #ddd;
+}
+
+.hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
 .project-box .box:hover{
     border: 2px solid #ddd;
     box-shadow: 0 0 8px #00e0ff;
@@ -198,8 +206,6 @@ header nav ul,li a:hover{
     flex-direction: column;
     border: 2px solid #00e0ff;
     border-radius: 50px 5px 50px 5px;
-    cursor: pointer;
-    transition: 0.2s ease-in;
 }
 
 .project-action--area{
@@ -210,11 +216,6 @@ header nav ul,li a:hover{
 
 .project-action--area .arrow{
     margin-bottom: 20px;
-}
-
-.project-action:hover{
-    border: 2px solid #ddd;
-    box-shadow: 0 0 8px #00e0ff;
 }
 
 .project-action span{
@@ -236,10 +237,6 @@ header nav ul,li a:hover{
     width: 80%;
     height: 400px;
     margin-bottom: 20px;
-}
-
-.project-active--midia video{
-    width: 100%;
 }
 
 .project-active--info{
