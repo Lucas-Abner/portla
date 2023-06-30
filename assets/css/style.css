@@ -120,6 +120,7 @@ header nav ul,li a:hover{
 }
 
 .sobre-desc{
+    width: 300px;
     color: aliceblue;
     margin: 20px;
     padding: 10px 30px;
@@ -466,6 +467,7 @@ footer{
     #sobre{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     #sobre .sobre-img img{
@@ -479,6 +481,7 @@ footer{
 
     #sobre .sobre-desc p{
         font-size: 16px;
+        text-align: center;
     }
 
     #projeto .project-geral{
