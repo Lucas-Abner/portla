@@ -503,12 +503,16 @@ footer{
     }
 
     .contact-form{
-        width: 94%;
+        width: 90%;
     }
 }
 
 @media (max-width: 410px){
     .banner h1{
         padding-right: 20px;
+    }
+
+    .contact-form{
+        width: 90%;
     }
 }
