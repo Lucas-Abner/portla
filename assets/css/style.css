@@ -392,3 +392,84 @@ footer{
     font-size: 12px;
     color: #CCC;
 }
+
+@media (max-width: 980px){
+    #sobre .sobre-img img{
+        width: 400px;
+        height: 350px;
+    }
+
+    #projeto .project-geral .project-box{
+        width: 80px;
+    }
+
+    #projeto .project-geral .project-box .box{
+        font-size: 35px;
+        padding: 6px 10px;
+    }
+
+    #projeto .project-geral .project-action{
+        width: 400px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 760px){
+    #sobre .sobre-img img{
+        width: 300px;
+        height: 250px;
+        margin-top: 10px;
+    }
+
+    #sobre .sobre-desc h1{
+        font-size: 35px;
+    }
+
+    #sobre .sobre-desc p{
+        font-size: 20px;
+    }
+
+    .project-info h1{
+        font-size: 35px;
+        text-align: center;
+    }
+
+    #projeto .project-geral .project-box .box{
+        font-size: 35px;
+        padding: 6px 10px;
+    }
+
+    #projeto .project-geral .project-action{
+        width: 300px;
+    }
+}
+
+@media (max-width: 650px)@media (max-width: 650px){
+    #sobre .sobre-desc{
+        padding: 10px;
+    }
+
+    #sobre .sobre-desc p{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 570px){
+    #sobre{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sobre .sobre-img img{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    #sobre .sobre-desc h1{
+        text-align: center;
+    }
+
+    #sobre .sobre-desc p{
+        font-size: 16px;
+    }
+}

@@ -53,9 +53,9 @@ function checkProject(boxActive) {
         tagA.setAttribute("href", "https://github.com/Lucas-Abner/age-calculator");
         tagB.setAttribute("href", "https://lucas-abner.github.io/age-calculator/");
     } else if (boxContent === 3) {
-        videoElement.src = "./assets/midia/mario.mp4";
-        tagA.setAttribute("href", "https://github.com/Lucas-Abner/mario-play");
-        tagB.setAttribute("href", "https://lucas-abner.github.io/mario-play/");
+        videoElement.src = "./assets/midia/bateria.mp4";
+        tagA.setAttribute("href", "https://github.com/Lucas-Abner/drum");
+        tagB.setAttribute("href", "https://lucas-abner.github.io/drum/");
     } else if (boxContent === 4) {
         videoElement.src = "./assets/midia/bank.mp4";
         tagA.setAttribute("href", "https://github.com/Lucas-Abner/project-bank");
