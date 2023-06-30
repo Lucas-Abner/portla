@@ -125,7 +125,7 @@ header nav ul,li a:hover{
 }
 
 .sobre-desc{
-    width: 350px;
+    width: 400px;
     color: aliceblue;
     margin: 20px;
     padding: 10px 30px;
@@ -475,9 +475,17 @@ footer{
         align-items: center;
     }
 
-    #sobre .sobre-img img{
+    #sobre .sobre-img{
         width: 94%;
+    }
+
+    #sobre .sobre-img img{
+        width: 100%;
         margin-bottom: 20px;
+    }
+
+    #sobre .sobre-desc{
+        width: 300px;
     }
 
     #sobre .sobre-desc h1{
@@ -522,5 +530,9 @@ footer{
 
     .contact-form{
         width: 90%;
+    }
+
+    #sobre .sobre-desc{
+        width: 270px;
     }
 }
