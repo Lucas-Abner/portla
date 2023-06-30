@@ -120,6 +120,7 @@ header nav ul,li a:hover{
 }
 
 .sobre-desc{
+    width: 350px;
     color: aliceblue;
     margin: 20px;
     padding: 10px 30px;
