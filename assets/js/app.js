@@ -1,7 +1,13 @@
 document.querySelectorAll(".box").forEach((item) => {
-    item.addEventListener("dragstart", dragStart);
-    item.addEventListener("dragend", dragEnd);
+      item.addEventListener("dragstart", dragStart);
+      item.addEventListener("dragend", dragEnd);
   });
+
+document.querySelectorAll(".box").forEach((item) => {
+    if(window.innerWidth <= 1000){
+      item.addEventListener("click", clickedItem);
+    }
+});
   
   document.querySelector(".project-action").addEventListener("dragover", dragOver);
   document.querySelector(".project-action").addEventListener("dragleave", dragLeave);
@@ -63,6 +69,44 @@ function checkProject(boxActive) {
     }
 }
 
+function clickedItem(e){
+    e.preventDefault();
+
+    e.currentTarget.classList.add("active");
+    let dragItem = document.querySelector(".box.active");
+
+    if(dragItem){
+      let boxContent = +dragItem.textContent;
+      let videoElement = document.querySelector(".video-on");
+      let tagA = document.querySelector(".git");
+      let tagB = document.querySelector(".site");
+      document.querySelector(".project-action--area").style.display = "none";
+      document.querySelector(".project-active").style.display = "flex";
+      
+
+      if (boxContent === 1) {
+          videoElement.src = "./assets/midia/voto.mp4";
+          tagA.setAttribute("href", "https://github.com/Lucas-Abner/how-did-we-do");
+          tagB.setAttribute("href", "https://lucas-abner.github.io/how-did-we-do/");
+      } else if (boxContent === 2) {
+          videoElement.src = "./assets/midia/years.mp4";
+          tagA.setAttribute("href", "https://github.com/Lucas-Abner/age-calculator");
+          tagB.setAttribute("href", "https://lucas-abner.github.io/age-calculator/");
+      } else if (boxContent === 3) {
+          videoElement.src = "./assets/midia/bateria.mp4";
+          tagA.setAttribute("href", "https://github.com/Lucas-Abner/drum");
+          tagB.setAttribute("href", "https://lucas-abner.github.io/drum/");
+      } else if (boxContent === 4) {
+          videoElement.src = "./assets/midia/bank.mp4";
+          tagA.setAttribute("href", "https://github.com/Lucas-Abner/project-bank");
+          tagB.setAttribute("href", "https://lucas-abner.github.io/project-bank/");
+      }
+
+      setTimeout(()=>{
+        dragItem.classList.remove("active");
+      }, 200)
+    }
+}
   
   function dropItemNeutral(e) {
     e.preventDefault();
