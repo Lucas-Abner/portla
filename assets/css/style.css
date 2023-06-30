@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; overflow-x: hidden;
 }
 
 body{
@@ -279,13 +279,13 @@ header nav ul,li a:hover{
 }
 
 #contato{
-    margin-top: 20
-    px;
+    margin-top: 20px;
     margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .contact-form{
@@ -396,9 +396,6 @@ footer{
 }
 
 @media (max-width: 980px){
-    nav ul,li{
-        margin-top: 15px;
-    }
 
     #sobre .sobre-img img{
         width: 400px;
